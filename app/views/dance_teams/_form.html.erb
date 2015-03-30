@@ -1,0 +1,45 @@
+<%= form_for(@dance_team) do |f| %>
+  <% if @dance_team.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dance_team.errors.count, "error") %> prohibited this dance_team from being saved:</h2>
+
+      <ul>
+      <% @dance_team.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_area :name %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :members %><br>
+    <%= f.number_field :members %>
+  </div>
+  <div class="field">
+    <%= f.label :HipHop %><br>
+    <%= f.check_box :HipHop %>
+  </div>
+  <div class="field">
+    <%= f.label :Ballet %><br>
+    <%= f.check_box :Ballet %>
+  </div>
+  <div class="field">
+    <%= f.label :Jazz %><br>
+    <%= f.check_box :Jazz %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

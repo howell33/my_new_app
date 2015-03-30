@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Dance Teams</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Team Name</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>Members</th>
+      <th>Hiphop</th>
+      <th>Ballet</th>
+      <th>Jazz</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dance_teams.each do |dance_team| %>
+      <tr>
+        <td><%= dance_team.name %></td>
+        <td><%= dance_team.phone %></td>
+        <td><%= dance_team.email %></td>
+         <td><%= dance_team.members %></td>
+        <td><%= dance_team.HipHop %></td>
+        <td><%= dance_team.Ballet %></td>
+        <td><%= dance_team.Jazz %></td>
+        <td><%= link_to 'Show', dance_team %></td>
+        <td><%= link_to 'Edit', edit_dance_team_path(dance_team) %></td>
+        <td><%= link_to 'Destroy', dance_team, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dance team', new_dance_team_path %>
