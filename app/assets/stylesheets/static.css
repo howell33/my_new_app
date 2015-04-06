@@ -3,11 +3,23 @@ body{
 	text-align: center;
 }
 
-ul { 
+ul.nav { 
 	list-style-type: none; 
 }
 
-li {
- display: inline; 
+ul.nav li {
+  padding: 0 1em;
+  display: inline; 
 }
+
+#error_explanation{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.field_with_errors{
+  text-align: center;
+  margin: 0 auto;
+}
+
 
