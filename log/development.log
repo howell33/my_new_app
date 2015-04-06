@@ -3386,3 +3386,103 @@ Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 
 
 
 Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for ::1 at 2015-04-06 16:41:58 -0400
+
+
+Started POST "/dance_teams" for ::1 at 2015-04-06 16:50:37 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (16.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DanceTeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"//GOAekJ7/2dQzncp/HQmEz71mrmNGzoyuVFj+MJoYBWU1Sk8iAzlUDkrUtWiQAhxcTq3+cFHAK34rFXAhZjMw==", "dance_team"=>{"name"=>"", "phone"=>"", "email"=>"", "members"=>"", "HipHop"=>"0", "Ballet"=>"0", "Jazz"=>"0"}, "commit"=>"Create Dance team"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered dance_teams/_form.html.erb (21.6ms)
+  Rendered dance_teams/new.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 1184ms (Views: 1080.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/dance_teams-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-06 16:50:39 -0400
+
+
+Started GET "/assets/application-5f9e123201235697ea622bcbad2ab91a.css?body=1" for ::1 at 2015-04-06 16:50:39 -0400
+
+
+Started GET "/assets/static-3df2573b3624d86616e948c1fc9df5aa.css?body=1" for ::1 at 2015-04-06 16:50:39 -0400
+
+
+Started GET "/assets/scaffolds-9491faa19dc2fc4447362f5a7facdc41.css?body=1" for ::1 at 2015-04-06 16:50:39 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-06 16:50:39 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-06 16:50:39 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-06 16:50:39 -0400
+
+
+Started GET "/assets/dance_teams-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-06 16:50:39 -0400
+
+
+Started GET "/assets/static-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-06 16:50:39 -0400
+
+
+Started GET "/assets/application-e5e7face3f4512cb331acefd5e77b444.js?body=1" for ::1 at 2015-04-06 16:50:39 -0400
+
+
+Started GET "/assets/static-3df2573b3624d86616e948c1fc9df5aa.css?body=1" for ::1 at 2015-04-06 16:50:39 -0400
+
+
+Started POST "/dance_teams" for ::1 at 2015-04-06 16:50:57 -0400
+Processing by DanceTeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3BlKFYOsySc1rpX2tBNvmPiQGTeHK17bIefg4lh5vmN1u5CwmIUVT+gJAWFFa78hca8lgoYaLjFc4BQ6uWZ80A==", "dance_team"=>{"name"=>"fxfxd", "phone"=>"hvhgg", "email"=>"dtdrdx", "members"=>"-20", "HipHop"=>"1", "Ballet"=>"0", "Jazz"=>"0"}, "commit"=>"Create Dance team"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  Rendered dance_teams/_form.html.erb (5.1ms)
+  Rendered dance_teams/new.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 165ms (Views: 159.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application-5f9e123201235697ea622bcbad2ab91a.css?body=1" for ::1 at 2015-04-06 16:50:57 -0400
+
+
+Started POST "/dance_teams" for ::1 at 2015-04-06 16:51:05 -0400
+Processing by DanceTeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sNmybb94va/5ACb4h36g3JLeTumqY4e/eVyT6kreL2sZe2jIpFFhxySnsm92BnBlG+FyXKtS91UEW2cyq8Ht2A==", "dance_team"=>{"name"=>"fxfxd", "phone"=>"hvhgg", "email"=>"dtdrdx", "members"=>"9", "HipHop"=>"1", "Ballet"=>"0", "Jazz"=>"0"}, "commit"=>"Create Dance team"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (27.4ms)[0m  [1mINSERT INTO "dance_teams" ("name", "phone", "email", "members", "HipHop", "Ballet", "Jazz", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "fxfxd"], ["phone", "hvhgg"], ["email", "dtdrdx"], ["members", 9], ["HipHop", "t"], ["Ballet", "f"], ["Jazz", "f"], ["created_at", "2015-04-06 20:51:05.698930"], ["updated_at", "2015-04-06 20:51:05.698930"]]
+  [1m[35m (24.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/dance_teams/3
+Completed 302 Found in 98ms (ActiveRecord: 52.0ms)
+
+
+Started GET "/dance_teams/3" for ::1 at 2015-04-06 16:51:05 -0400
+Processing by DanceTeamsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDanceTeam Load (0.2ms)[0m  [1mSELECT  "dance_teams".* FROM "dance_teams" WHERE "dance_teams"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered dance_teams/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 202ms (Views: 92.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dance_teams" for ::1 at 2015-04-06 16:51:09 -0400
+Processing by DanceTeamsController#index as HTML
+  [1m[35mDanceTeam Load (0.2ms)[0m  SELECT "dance_teams".* FROM "dance_teams"
+  Rendered dance_teams/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 85ms (Views: 84.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/dance_teams/3" for ::1 at 2015-04-06 16:51:13 -0400
+Processing by DanceTeamsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"IG0WhDl3AZal3Akdw167+878oGqgG1rlF3Aa3nRf/f6Jz8whIl7d/nh7nYoyJmtCR8Oc36EqKg9qd+4GlUA/TQ==", "id"=>"3"}
+  [1m[36mDanceTeam Load (0.1ms)[0m  [1mSELECT  "dance_teams".* FROM "dance_teams" WHERE "dance_teams"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (12.0ms)[0m  [1mDELETE FROM "dance_teams" WHERE "dance_teams"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/dance_teams
+Completed 302 Found in 17ms (ActiveRecord: 13.8ms)
+
+
+Started GET "/dance_teams" for ::1 at 2015-04-06 16:51:13 -0400
+Processing by DanceTeamsController#index as HTML
+  [1m[36mDanceTeam Load (0.4ms)[0m  [1mSELECT "dance_teams".* FROM "dance_teams"[0m
+  Rendered dance_teams/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 67ms (Views: 65.6ms | ActiveRecord: 0.4ms)
