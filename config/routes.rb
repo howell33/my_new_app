@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :dance_teams
+  
   root 'static#home'
 
   get '/about' => 'static#about'
