@@ -7,12 +7,12 @@ gem 'cat_api', '~> 0.1.0'
 gem 'rails', '4.2.1'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
-	gem 'sqlite3'
+  gem 'sqlite3'
 end
 
 group :production do
-	gem 'pg'
-	gem 'rails_12factor'
+  gem 'pg'
+  gem 'rails_12factor'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
